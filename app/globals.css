@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sidebar{
+    background-image: url("../public/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar-mobile{
+    background-image: url("../public/bg-sidebar-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marine-blue{
+    color: hsl(213, 96%, 18%);
+}
+
+.purplish-blue{
+    color: hsl(243, 100%, 62%);
+}
+
+.pastel-blue{
+    color: hsl(228, 100%, 84%);
+}
+
+.light-blue{
+    color: hsl(206, 94%, 87%);
+}
+
+.strawberry-red{
+    color: hsl(354, 84%, 57%);
+}
+
+.cool-gray{
+    color: hsl(231, 11%, 63%);
+}
+
+.light-gray{
+    color: hsl(229, 24%, 87%);
+}
+
+.magnolia{
+    color: hsl(217, 100%, 97%);
+}
+
+.alabaster{
+    color: hsl(231, 100%, 99%);
+}
