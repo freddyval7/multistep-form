@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -21,10 +20,12 @@ type FormValues = {
   email: string;
   phone: string;
   plan: "arcade" | "advanced" | "pro";
+  pricePlan: number;
   typePlan: "monthly" | "yearly";
   online?: boolean;
   largeStorage?: boolean;
   customProfile?: boolean;
+  total: number;
 };
 
 type Step1 = {
@@ -38,10 +39,12 @@ export const FormAtom = atom<FormValues>({
   email: "",
   phone: "",
   plan: "arcade",
+  pricePlan: 9,
   typePlan: "monthly",
   online: false,
   largeStorage: false,
   customProfile: false,
+  total: 9,
 });
 
 export default function Step1() {
@@ -71,6 +74,7 @@ export default function Step1() {
         <form className="space-y-4" onSubmit={onSubmit}>
           <FormField
             control={form.control}
+            defaultValue={formAtom.name}
             name="name"
             rules={{ required: "This field is required" }}
             render={({ field }) => (
@@ -91,6 +95,7 @@ export default function Step1() {
           />
           <FormField
             control={form.control}
+            defaultValue={formAtom.email}
             name="email"
             rules={{ required: "This field is required" }}
             render={({ field }) => (
@@ -111,6 +116,7 @@ export default function Step1() {
           />
           <FormField
             control={form.control}
+            defaultValue={formAtom.phone}
             name="phone"
             rules={{ required: "This field is required" }}
             render={({ field }) => (
