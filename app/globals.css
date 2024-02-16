@@ -33,6 +33,16 @@
     --ring: 222.2 84% 4.9%;
  
     --radius: 0.5rem;
+
+    --marine-blue: 213 96% 18%;
+    --purplish-blue: 243 100% 62%;
+    --pastel-blue: 228 100% 84%;
+    --light-blue: 206 94% 87%;
+    --strawberry-red: 354 84% 57%;
+    --cool-gray: 231 11% 63%;
+    --light-gray: 229 24% 87%;
+    --magnolia: 217 100% 97%;
+    --alabaster: 231 100% 99%;
   }
  
   .dark {
@@ -64,6 +74,18 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+}
+
+.sidebar{
+  background-image: url("../public/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar-mobile{
+  background-image: url("../public/bg-sidebar-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
  
 @layer base {

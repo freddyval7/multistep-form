@@ -5,7 +5,7 @@ export default function Sidebar(props: { step: string, className?: string}) {
         <div
           className={`${
             props.step === "1"
-              ? "bg-[hsl(228, 100%, 84%)] marine-blue"
+              ? "bg-light-blue text-marine-blue"
               : "text-white"
           } border rounded-full px-3 py-1 border-white`}
         >
@@ -20,7 +20,7 @@ export default function Sidebar(props: { step: string, className?: string}) {
         <div
           className={`${
             props.step === "1"
-              ? "bg-[hsl(228, 100%, 84%)] marine-blue"
+              ? "bg-pastel-blue text-marine-blue"
               : "text-white"
           } border rounded-full px-3 py-1 border-white`}
         >
@@ -35,7 +35,7 @@ export default function Sidebar(props: { step: string, className?: string}) {
         <div
           className={`${
             props.step === "1"
-              ? "bg-[hsl(228, 100%, 84%)] marine-blue"
+              ? "bg-pastel-blue text-marine-blue"
               : "text-white"
           } border rounded-full px-3 py-1 border-white`}
         >
@@ -50,7 +50,7 @@ export default function Sidebar(props: { step: string, className?: string}) {
         <div
           className={`${
             props.step === "1"
-              ? "bg-[hsl(228, 100%, 84%)] marine-blue"
+              ? "bg-pastel-blue text-marine-blue"
               : "text-white"
           } border rounded-full px-3 py-1 border-white`}
         >
