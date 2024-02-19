@@ -15,7 +15,7 @@ export default function SidebarMobile(props: { step: string, className: string})
         <div className="flex items-center gap-4">
           <div
             className={`${
-              props.step === "1"
+              props.step === "2"
                 ? "bg-light-blue text-marine-blue"
                 : "text-white"
             } border rounded-full px-3 py-1 border-white`}
@@ -26,7 +26,7 @@ export default function SidebarMobile(props: { step: string, className: string})
         <div className="flex items-center gap-4">
           <div
             className={`${
-              props.step === "1"
+              props.step === "3"
                 ? "bg-light-blue text-marine-blue"
                 : "text-white"
             } border rounded-full px-3 py-1 border-white`}
@@ -37,7 +37,7 @@ export default function SidebarMobile(props: { step: string, className: string})
         <div className="flex items-center gap-4">
           <div
             className={`${
-              props.step === "1"
+              props.step === "4"
                 ? "bg-light-blue text-marine-blue"
                 : "text-white"
             } border rounded-full px-3 py-1 border-white`}
