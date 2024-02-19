@@ -47,7 +47,7 @@ export default function Step2() {
   });
 
   return (
-    <div className="w-1/2 mx-auto my-auto border-2 rounded-md shadow-lg p-8 space-y-8">
+    <div className="md:w-1/2 mx-auto my-auto border-2 rounded-md shadow-lg p-8 space-y-8">
       <div>
         <h1 className="text-2xl font-bold text-marine-blue">
           Select your Plan
