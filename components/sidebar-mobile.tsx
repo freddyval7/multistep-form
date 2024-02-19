@@ -1,6 +1,6 @@
 export default function SidebarMobile(props: { step: string, className: string}) {
     return (
-      <div className={`${props.className} sidebar-mobile flex items-center gap-4 justify-center pt-8 pb-16`}>
+      <div className={`${props.className} sidebar-mobile flex items-center gap-4 justify-center p-8`}>
         <div className="flex items-center gap-4">
           <div
             className={`${
