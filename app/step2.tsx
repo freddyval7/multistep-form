@@ -57,7 +57,7 @@ export default function Step2() {
         </p>
       </div>
       <Form {...form}>
-        <form className="space-y-4" onSubmit={onSubmit}>
+        <form className="space-y-8 md:space-y-4" onSubmit={onSubmit}>
           <FormField
             control={form.control}
             name="plan"
@@ -66,24 +66,24 @@ export default function Step2() {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <div className="grid grid-cols-3 gap-4">
+                  <div className="grid md:grid-cols-3 gap-4">
                     <div
                       onClick={() => {
                         form.setValue("plan", "arcade");
                         setPlan("arcade");
                       }}
-                      className={`space-y-8 border shadow-lg p-4 cursor-pointer rounded-lg ${
+                      className={`md:space-y-8 flex flex-row md:flex-col gap-4 border shadow-lg p-4 cursor-pointer rounded-lg ${
                         plan === "arcade" && "border-purplish-blue"
                       }`}
                     >
                       <Image
                         src={arcade}
                         alt="Arcade"
-                        className="w-8 h-8"
+                        className="md:w-8 md:h-8 w-12 h-12"
                         width={24}
                         height={24}
                       />
-                      <div>
+                      <div className="space-y-1">
                         <p className="text-marine-blue font-bold">Arcade</p>
                         <p
                           className={`text-cool-gray text-sm ${
@@ -113,18 +113,18 @@ export default function Step2() {
                         form.setValue("plan", "advanced");
                         setPlan("advanced");
                       }}
-                      className={`space-y-8 border shadow-lg p-4 cursor-pointer rounded-lg ${
+                      className={`md:space-y-8 flex flex-row md:flex-col gap-4 border shadow-lg p-4 cursor-pointer rounded-lg ${
                         plan === "advanced" && "border-purplish-blue"
                       }`}
                     >
                       <Image
                         src={advanced}
                         alt="Advanced"
-                        className="w-8 h-8"
+                        className="md:w-8 md:h-8 w-12 h-12"
                         width={24}
                         height={24}
                       />
-                      <div>
+                      <div className="space-y-1">
                         <p className="text-marine-blue font-bold">Advanced</p>
                         <p
                           className={`text-cool-gray text-sm ${
@@ -154,18 +154,18 @@ export default function Step2() {
                         form.setValue("plan", "pro");
                         setPlan("pro");
                       }}
-                      className={`space-y-8 border shadow-lg p-4 cursor-pointer rounded-lg ${
+                      className={`md:space-y-8 flex flex-row md:flex-col gap-4 border shadow-lg p-4 cursor-pointer rounded-lg ${
                         plan === "pro" && "border-purplish-blue"
                       }`}
                     >
                       <Image
                         src={pro}
                         alt="Pro"
-                        className="w-8 h-8"
+                        className="md:w-8 md:h-8 w-12 h-12"
                         width={24}
                         height={24}
                       />
-                      <div>
+                      <div className="space-y-1">
                         <p className="text-marine-blue font-bold">Pro</p>
                         <p
                           className={`text-cool-gray text-sm ${
@@ -203,7 +203,7 @@ export default function Step2() {
             render={({ field }) => (
               <FormItem className="flex items-center gap-4 justify-center">
                 <span
-                  className={`text-marine-blue text-xs ${
+                  className={`text-marine-blue md:text-xs ${
                     field.value === "monthly" && "font-bold"
                   }`}
                 >
@@ -211,6 +211,7 @@ export default function Step2() {
                 </span>
                 <FormControl>
                   <Switch
+                    color="blue"
                     onCheckedChange={(checked) => {
                       setTypePlan(checked ? "yearly" : "monthly");
                       form.setValue("typePlan", checked ? "yearly" : "monthly");
@@ -218,7 +219,7 @@ export default function Step2() {
                   />
                 </FormControl>
                 <span
-                  className={`text-marine-blue text-xs ${
+                  className={`text-marine-blue md:text-xs ${
                     field.value === "yearly" && "font-bold"
                   }`}
                 >
