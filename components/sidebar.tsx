@@ -50,7 +50,7 @@ export default function Sidebar(props: { step: string, className?: string}) {
       <div className="flex items-center gap-4">
         <div
           className={`${
-            props.step === "4"
+            props.step === "4" || props.step === "5"
               ? "bg-light-blue text-marine-blue"
               : "text-white"
           } border rounded-full px-3 py-1 border-white`}
